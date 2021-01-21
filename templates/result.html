@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RESULT</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+      body {
+        background-image: url('static/Logo.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: auto;
+        background-color: maroon;
+      }
+      label {
+        color: #fff;
+      }
+      h1 {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body align=center>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"><legend><h1>YOUR RESULT IS</h1></legend></div>
+      <div class="col-md-4"></div>
+    </div>
+    <div align=left>
+      <form class="form-vertical">
+        <fieldset disabled>
+          <div class="form-group">
+            <label class="control-label col-xs-9" for="result"></label>
+            <div class="col-xs-9" align="left">
+              <label>Price of Order</label>
+              <input type="text" name="price" class="form-control" placeholder="${{ priceoforder }}">
+              <label>S/H</label>
+              <input type="text" name="shipping" class="form-control" placeholder="${{ priceofshipping }}">
+              <label>Total USD</label>
+              <input type="text" name="total" class="form-control" placeholder="${{ entry }}">
+              <label>Current BTC price</label>
+              <input type="text" name="btcprice" class="form-control" placeholder="${{ btcprice }}">
+              <label>TOTAL USD converted to BTC</label>
+              <input type="text" name="USDTOBTC" class="form-control" placeholder="{{ USDTOBTC }}">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div align=right>
+      <form class="form-horizontal">
+        <fieldset disabled>
+          <div class="form-group">
+            <label class="control-label col-md-6" for="result"></label>
+            <div class="col-md-6" align="right">
+              <label>The price in Waya Wolf Coin is: </label>
+              <input type="text" name="pww" class="form-control" placeholder="{{ pww }} WW">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

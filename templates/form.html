@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Conversion Quote</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="static/styles.css">
+                <style>
+                body {
+                    background-color: maroon;
+                }
+                h1 {
+                    color: #fff;
+                }
+		label {
+		    color: #fff;
+		}
+                </style>
+	</head>
+
+	<body align=center>
+		<picture>
+  		<img src="static/unknown.png" alt="waya.png" style="width:auto;">
+		</picture>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"><legend><h1>WayaWolfCoin Conversion Quote</h1></legend></div>
+			<div class="col-md-4"></div>
+		</div>
+			<br>
+
+			<div class="row">
+			<div class="float-lg-3" ></div>
+			<div class="float-lg-5">
+				<form class="horizontal-form" action={{ url_for('result') }} method="post">
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="var_1">Price Of Order:</label>
+						<div class="col-xs-7">
+							<input class="form-control" name="var_1" value="0">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="var_1">Price Of Shipping:</label>
+						<div class="col-xs-7">
+							<input class="form-control" name="var_2" value="0">
+						</div>
+					</div>
+					<div align=center class="form-group">
+            			<div class="col-xs-offset-3 col-xs-9">
+                			<input type="submit" class="btn btn-success" value="Submit">
+                			<input type="reset" class="btn btn-danger" value="Reset">
+            			</div>
+        			</div>
+        		</form>
+        	</div>
+        	<div class="col-sm-4"></div></div>
+		</div>
+	</body>
+</html>

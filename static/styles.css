@@ -1,0 +1,20 @@
+body {
+  background: url('static/bckground.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.container{
+  margin-left: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.container-r{
+  margin-right: 0;
+  background-color: #333;
+  color: #fff;
+}
+
